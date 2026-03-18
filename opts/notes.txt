@@ -1,0 +1,1 @@
+All files up until optresult(11).npz are strictly for 90nm minimum feature size.
