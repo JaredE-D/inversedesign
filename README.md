@@ -3,7 +3,7 @@ In this repo I used inverse design algorithms to optimize for different beamspli
 The code uses a multi-step beta approach where we use a Tanh projection of the weights to model the physical constraints of keeping features above 50nm. This is done to explore the design space while
 achieving physical designs and iteratively decreasing feature size.
 Simulations were performed with MEEP the open source FDTD solver. 
-An example 50:50 beamsplitter simulation is shown here:
+An example 60:40 beamsplitter simulation is shown here:
 
 ![fieldgif](./optresult\(6\)_field.gif)
 
