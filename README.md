@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # inversedesign
 
 Adjoint-based **topology optimization (inverse design)** of a silicon photonic **MMI (multimode interference) splitter** using MEEP's `meep.adjoint` module, targeting an asymmetric power split ratio (e.g. 90:10, 60:40) near 1550 nm.
@@ -66,3 +67,14 @@ An example 60:40 beamsplitter simulation:
 - **`spectra/`** — Transmission spectra plots and data for selected designs (currently optresult(6) and optresult(11)).
 - **`outputs/`** — Raw HDF5 field/epsilon data from verification simulations.
 - Top-level images/GIFs (`90_10.png`, `60_40.png`, `geometry.png`, `Efield.gif`, `Ez_opt.gif`, `FigM(opt9/11).png`, `forward_Ez.png`, `optresult(*)_field.gif`) — figures of merit, geometry previews, and field animations from various optimization runs.
+=======
+In this repo I used inverse design algorithms to optimize for different beamsplitting power ratios in a small 2x2 $\mu m$ area. 90:10 and 60:40 splitting ratios were also optimized for high power transmittance in a small footprint.
+
+The code uses a multi-step beta approach where we use a Tanh projection of the weights to model the physical constraints of keeping features above 50nm. This is done to explore the design space while
+achieving physical designs and iteratively decreasing feature size.
+Simulations were performed with MEEP the open source FDTD solver. 
+An example 60:40 beamsplitter simulation is shown here:
+
+![fieldgif](./optresult\(6\)_field.gif)
+
+>>>>>>> refs/remotes/origin/master
